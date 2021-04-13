@@ -1,0 +1,21 @@
+$color: lightgray;
+
+#block {
+  display: flex;
+  height: 110vh;
+
+  .Container {
+    display: flex;
+    height: 100%;
+
+    &-Left {
+      background-color: $color;
+      flex: 0.2;
+    }
+
+    &-Right {
+      flex: 1;
+    }
+  }
+}
+
