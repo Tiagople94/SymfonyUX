@@ -2,15 +2,48 @@
 
 
 {% block body %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Welcome to Symfony UX</title>
-</head>
 <body>
-    <h1>Welcome to Symfony UX</h1>
-</body>
-</html>
+    <div id="bodyBlock" class="bodyBlock">
+        <h1 class="title" data-controller="hello"></h1>
+        <div class="bodyBlock_Tools" data-controller="text">
+            <img
+                    src="{{ asset('image/rsz_stimulus.jpg') }}"
+                    {{ stimulus_controller('symfony/ux-lazy-image/lazy-image') }}
+                    data-hd-src="{{ asset('image/Stimulus.png') }}"
+                    width="250"
+                    height="150"
+            />
 
+            <div>
+                <span class="stimulusClass" data-text-target="textBlock"></span>
+            </div>
+        </div>
+        <div class="bodyBlock_Tools" data-controller="text">
+            <img
+                    src="{{ asset('image/rsz_stimulus.jpg') }}"
+                    {{ stimulus_controller('symfony/ux-lazy-image/lazy-image') }}
+                    data-hd-src="{{ asset('image/Turbo.png') }}"
+                    width="250"
+                    height="100"
+            />
+
+            <div>
+                <span class="TurboClass" data-text-target="textBlock"></span>
+            </div>
+        </div>
+        <div class="bodyBlock_Tools" data-controller="text">
+            <img
+                    src="{{ asset('image/rsz_stimulus.jpg') }}"
+                    {{ stimulus_controller('symfony/ux-lazy-image/lazy-image') }}
+                    data-hd-src="{{ asset('image/Strada.png') }}"
+                    width="250"
+                    height="100"
+            />
+
+            <div>
+                <span class="StradaClass" data-text-target="textBlock"></span>
+            </div>
+        </div>
+    </div>
+</body>
 {% endblock %}

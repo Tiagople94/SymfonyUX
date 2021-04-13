@@ -19,3 +19,22 @@ $color: lightgray;
   }
 }
 
+.bodyBlock {
+  .title {
+    text-align: center;
+  }
+
+  &_Tools {
+    padding: 5%;
+    display: flex;
+
+    div {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+    }
+  }
+}
+
+
+
