@@ -36,5 +36,20 @@ $color: lightgray;
   }
 }
 
+.exampleBox {
+  display: flex;
+  margin-bottom: 5%;
+
+  &_Package {
+    flex: 40%;
+  }
+
+  &_Textbox {
+    flex: 60%;
+    display: flex;
+    align-items: center;
+  }
+}
+
 
 
