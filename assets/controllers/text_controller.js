@@ -10,15 +10,13 @@ export default class extends Controller {
     displayText() {
         switch (this.textBlockTarget.getAttribute("class")) {
             case "stimulusClass":
-                this.textBlockTarget.textContent = 'Stimulus is a JavaScript framework with modest ambitions. It doesn’t seek to take over your entire front-end—in fact, ' +
-                    'it’s not concerned with rendering HTML at all. ' +
-                    'Instead, it’s designed to augment your HTML with just enough behavior to make it shine.';
+                this.textBlockTarget.textContent = 'Stimulus est un framework JavaScript aux ambitions modestes. Il ne cherche pas à prendre en charge l\'intégralité de votre front-end. En fait, il ne se préoccupe pas du tout de rendu HTML. Au lieu de cela, il est conçu pour augmenter votre code HTML avec juste assez de comportement pour le faire briller.';
                 break;
             case "TurboClass":
-                this.textBlockTarget.textContent = 'Turbo uses complementary techniques to dramatically reduce the amount of custom JavaScript that most web applications will need to write';
+                this.textBlockTarget.textContent = 'Turbo utilise des techniques complémentaires pour réduire considérablement la quantité de JavaScript personnalisé que la plupart des applications Web auront besoin d\'écrire';
                 break;
             case "StradaClass":
-                this.textBlockTarget.textContent = 'Standardizes the way that web and native parts of a mobile hybrid application talk to each other via HTML bridge attributes.';
+                this.textBlockTarget.textContent = 'Standardise la façon dont les parties Web et natives d\'une application hybride mobile se communiquent via des attributs de pont HTML.';
                 break;
         }
     }
