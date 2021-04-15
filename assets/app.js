@@ -8,7 +8,12 @@
 // any CSS you import will output into a single css file (app.css in this case)
 //import './styles/app.css';
 import './styles/styles.scss';
+import 'react-credit-cards/es/styles-compiled.css';
+import 'react-credit-cards/lib/styles.scss';
+
+
 
 // start the Stimulus application
 import './bootstrap';
+import './controllers/components/Greeting.jsx';
 
